@@ -1,14 +1,15 @@
 import ImageBackground from "@/components/shared/ImageBackground";
-import faqImage from "@/assets/faq.jpg";
-import FaqQuestion from "./faq/FaqQuestion";
-export default function Faq() {
+import image from "@/assets/privacy.jpg";
+import TermsOfServiceScroll from "./TermScroll";
+
+export default function TermsOfService() {
   return (
-    <div className="space-y-[100px]">
-      <ImageBackground image={faqImage}>
+    <div>
+      <ImageBackground image={image}>
         <div className="text-center max-w-5xl mx-auto">
-          <h1 className="text-3xl md:text-4xl lg:text-[64px] leading-tight max-w-[900px]  mx-auto text-white font-bold">
+          <h1 className="text-3xl md:text-4xl lg:text-[64px] leading-tight max-w-3xl text-white mx-auto  font-bold">
             Because Even Weirdness Needs Some
-            <span className="text-[#E5025C]"> Rules</span>
+            <span className="text-[#E5025C]">Rules</span>
           </h1>
           <p className="text-white mt-6 text-xl  mb-16 lg:mb-0 lg:text-2xl font-medium max-w-5/6 mx-auto">
             Strange finds, silly fun, and… legal disclaimers. Read on, it won’t
@@ -16,7 +17,7 @@ export default function Faq() {
           </p>
         </div>
       </ImageBackground>
-      <FaqQuestion />
+      <TermsOfServiceScroll />
     </div>
   );
 }

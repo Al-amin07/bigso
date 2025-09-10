@@ -1,10 +1,10 @@
+import image from "@/assets/privacy.jpg";
 import ImageBackground from "@/components/shared/ImageBackground";
-import contactImage from "@/assets/contact.jpg";
-import ContactUsForm from "./contact/ContactForm";
-const Contact = () => {
+import PrivacyPolicyScroll from "./Scroll";
+export default function () {
   return (
-    <div className="">
-      <ImageBackground image={contactImage}>
+    <div>
+      <ImageBackground image={image}>
         <div className="text-center max-w-5xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-[64px] leading-tight max-w-3xl mx-auto text-[#E5025C] font-bold">
             Get in <span className="text-white">Touch</span> with Us
@@ -15,9 +15,7 @@ const Contact = () => {
           </p>
         </div>
       </ImageBackground>
-      <ContactUsForm />
+      <PrivacyPolicyScroll />
     </div>
   );
-};
-
-export default Contact;
+}

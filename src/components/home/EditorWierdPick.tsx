@@ -53,35 +53,17 @@ const editorsPicks = [
 
 const EditorsWeirdPicks: React.FC<EditorsWeirdPicksProps> = ({}) => {
   return (
-    <div className="w-full  p-8 ">
-      {/* Header */}
+    <div className="w-full ">
       <TextHeader
         title="Avocado Toast Socks"
         desc="Our team of professional weirdos handpicked these gems just for you!"
       />
-      {/* <div className="text-center mb-8">
-        <div className="flex items-center justify-center gap-2 mb-4">
-          <ShoppingBag className="w-8 h-8 text-purple-600" />
-          <h2 className="text-3xl font-bold text-purple-600">{title}</h2>
-        </div>
-        <p className="text-gray-700 text-lg max-w-2xl mx-auto">{subtitle}</p>
-      </div> */}
 
-      {/* Products Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
         {editorsPicks.map((product, index) => (
           <EditorCard key={product.id} product={product} index={index} />
         ))}
       </div>
-
-      {/* Dimensions Badge */}
-      {/* {showDimensions && (
-        <div className="flex justify-center">
-          <div className="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-md">
-            {dimensions}
-          </div>
-        </div>
-      )} */}
     </div>
   );
 };

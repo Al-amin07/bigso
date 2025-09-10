@@ -103,7 +103,7 @@ const products = [
 
 export default function WeirdFinds() {
   return (
-    <div className="min-h-screen relative   p-8">
+    <div className=" relative ">
       <div className="max-w-7xl relative z-20 mx-auto">
         {/* Header */}
         <TextHeader

@@ -6,7 +6,7 @@ interface VideoBackgroundProps {
 
 export function VideoBackground({ videoSrc, children }: VideoBackgroundProps) {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative lg:min-h-screen overflow-hidden">
       {/* Video Background */}
       <video
         autoPlay
@@ -16,7 +16,7 @@ export function VideoBackground({ videoSrc, children }: VideoBackgroundProps) {
         className="absolute inset-0 shadow-2xl filter blur-sm w-full h-full object-cover z-0"
       >
         <source src={videoSrc} type="video/mp4" />
-        <div className="flex items-center justify-center h-full text-white text-lg">
+        <div className="flex items-center justify-center  h-full text-white text-lg">
           Your browser does not support the video tag.
         </div>
       </video>

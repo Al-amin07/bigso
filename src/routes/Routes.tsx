@@ -11,6 +11,8 @@ import Signup from "@/pages/Signup";
 import Form from "@/pages/Form";
 import Services from "@/pages/Services";
 import Faq from "@/pages/Faq";
+import PrivacyPolicy from "@/pages/privacy-policy/PrivacyPolicy";
+import TermsOfService from "@/pages/terms-of-service/TermsOfService";
 
 const routes = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const routes = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms-of-service",
+        element: <TermsOfService />,
       },
       {
         path: "/form",

@@ -17,6 +17,30 @@
   --color-brand-dark: #3730a3;
 }
 
+/* Entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* width of vertical scrollbar */
+  height: 12px; /* height of horizontal scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+/* Thumb (scroll handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #a60195; /* color of the scrollbar */
+  border-radius: 6px; /* roundness */
+  border: 2px solid #f0f0f0; /* padding around thumb */
+}
+
+/* Optional: on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3730a3;
+}
+
 @theme {
   --color-website-color-black: #212a31;
   --color-website-color-darkGray: #2e3944;

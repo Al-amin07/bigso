@@ -21,7 +21,7 @@ const HeaderHero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl font-comic text-center md:text-[64px] font-bold mb-5 z-10">
+          <h1 className="md:text-4xl text-3xl lg:text-5xl font-comic text-center md:text-[64px] font-bold mb-5 z-10">
             <span className="text-[#E5025C]">Enter the</span>{" "}
             <span className="text-white">Wonderland</span>{" "}
             <span className="text-[#E5025C]">World!</span>
@@ -39,16 +39,16 @@ const HeaderHero = () => {
 
           {/* Buttons */}
           <div className="flex justify-center gap-4 mb-6 z-10">
-            <button className="bg-[#9B4DCA] text-xl text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+            <button className="bg-[#9B4DCA] text-xl text-white px-3 md:px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
               🎭 Start Madness
             </button>
-            <button className="bg-[#FFFF00] text-xl text-[#9B4DCA] px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition flex items-center gap-2">
+            <button className="bg-[#FFFF00] text-xl text-[#9B4DCA] px-3 md:px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition flex items-center gap-2">
               <FaSearch /> Browse Weird Stuff
             </button>
           </div>
 
           {/* Stats */}
-          <div className="flex gap-10 justify-center z-10">
+          <div className="flex gap-10 justify-center mb-16 z-10">
             <div className="text-center">
               <span className="font-bold text-[#9B4DCA] text-lg">1000+</span>
               <p className=" mt-1.5">Weird Items</p>

@@ -14,17 +14,6 @@ const EditorCard: React.FC<{ product: Product; index: number }> = ({
   product,
   index,
 }) => {
-  const getButtonStyles = (color: string = "purple") => {
-    const styles = {
-      purple: "bg-purple-500 hover:bg-purple-600 text-white",
-      yellow: "bg-yellow-400 hover:bg-yellow-500 text-black",
-      cyan: "bg-cyan-400 hover:bg-cyan-500 text-white",
-      green: "bg-green-500 hover:bg-green-600 text-white",
-      red: "bg-red-500 hover:bg-red-600 text-white",
-    };
-    return styles[color as keyof typeof styles] || styles.purple;
-  };
-
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
       <Star

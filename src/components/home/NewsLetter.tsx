@@ -1,14 +1,13 @@
 import newsLetter from "@/assets/news-letter.jpg";
 import joker from "@/assets/joker.png";
-import { FaYenSign } from "react-icons/fa";
 const NewsLetter = () => {
   return (
-    <div className="relative bg-gradient-to-b from-purple-100 to-white  flex items-center justify-center">
+    <div className="relative bg-gradient-to-b from-purple-100 to-white  flex items-center justify-center ">
       <div className="absolute inset-0  bg-black/20">
         <img src={newsLetter} className="w-full h-full object-cover" alt="" />
       </div>
       <div className="relative z-10 text-center text-white  pt-2 pb-14">
-        <div className="flex mb-16 justify-center items-center mx-auto w-18   h-18 bg-white rounded-full">
+        <div className="flex mb-10 md:mb-16 justify-center items-center mx-auto w-18   h-18 bg-white rounded-full">
           <img
             src={joker}
             alt="Weirdness Logo"
@@ -16,12 +15,14 @@ const NewsLetter = () => {
           />
         </div>
 
-        <h1 className="text-5xl  font-bold  mb-3.5">Get More Weirdness!</h1>
-        <p className="text-2xl  mb-15 max-w-4xl mx-auto text-center">
+        <h1 className=" md:text-4xl text-3xl lg:text-5xl  font-bold  mb-3.5">
+          Get More Weirdness!
+        </h1>
+        <p className=" text-lg md:text-xl lg:text-2xl  mb-15 max-w-4xl mx-auto text-center">
           Join 50,000+ fellow weirdos and get the latest bizarre finds delivered
           to your inbox. Prepare to be filled with joy! 😄
         </p>
-        <div className="bg-white py-6 px-9 rounded-lg shadow-lg max-w-xl mx-auto">
+        <div className="bg-white py-6 px-5 lg:px-9 rounded-lg shadow-lg max-w-xl mx-auto">
           <div className="flex items-center gap-5">
             <input
               type="email"

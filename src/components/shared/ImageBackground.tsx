@@ -6,19 +6,21 @@ interface IProps {
 export default function ImageBackground({ image, children }: IProps) {
   return (
     <div>
-      <div className="relative h-[700px] overflow-hidden">
-        <div>
+      <div className="relative lg:h-[600px] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full shadow-2xl">
           <img
             src={image}
             alt="Images"
-            className="absolute w-full  inset-0 shadow-2xl filter blur-sm"
+            className="object-cover w-full h-full"
           />
         </div>
 
         {/* Overlay */}
-        <div className="absolute bg-black/05 inset-0 w-full h-full  backdrop-blur-sm"></div>
+        <div className="absolute inset-0 w-full h-full bg-black/10 backdrop-blur-sm"></div>
+
         {/* Content */}
-        <div className="relative z-20  mt-64">{children}</div>
+        <div className="relative z-20 mt-60 lg:mt-64">{children}</div>
       </div>
     </div>
   );
