@@ -4,6 +4,7 @@ import e1 from "@/assets/products/editor1.png";
 import e2 from "@/assets/products/editor2.png";
 import e3 from "@/assets/products/editor3.png";
 import TextHeader from "../shared/TextHeader";
+// import WrapperBackground from "../WrapperBackground";
 interface EditorsWeirdPicksProps {
   title?: string;
   subtitle?: string;

@@ -5,7 +5,7 @@ import TextHeader from "@/components/shared/TextHeader";
 // Story Section
 const OutStory = () => {
   return (
-    <div className="max-w-5xl w-full mx-auto bg-white/70 ">
+    <div className="max-w-5xl w-full mx-auto  ">
       <TextHeader
         title="  Our Story"
         desc=" It all started with a rubber chicken and a dream..."

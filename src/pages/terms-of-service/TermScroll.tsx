@@ -1,4 +1,5 @@
-import CommonWrapper from "@/common/CommonWrapper";
+// import CommonWrapper from "@/common/CommonWrapper";
+import WrapperBackground from "@/components/WrapperBackground";
 import { useRef } from "react";
 import { FaDownload } from "react-icons/fa";
 
@@ -33,7 +34,7 @@ export default function TermsOfServiceScroll() {
   ];
 
   return (
-    <CommonWrapper>
+    <WrapperBackground>
       <div className=" relative mt-[80px] ">
         <div className="  p-6 overflow-hidden">
           {/* Scrollable Content */}
@@ -76,6 +77,6 @@ export default function TermsOfServiceScroll() {
         </div>
         {/* Export Button */}
       </div>
-    </CommonWrapper>
+    </WrapperBackground>
   );
 }

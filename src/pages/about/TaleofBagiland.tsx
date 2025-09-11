@@ -1,7 +1,7 @@
 import storyImage from "@/assets/story.jpg";
 export default function TaleofBagiland() {
   return (
-    <div className="max-w-5xl mx-auto w-full bg-white/70   ">
+    <div className="max-w-5xl mx-auto w-full    ">
       <div className="text-center mb-12">
         <h1 className="md:text-4xl text-3xl lg:text-5xl  font-bold text-[var(--color-brand)] mb-6">
           The Tale of <span className="text-orange-500">BAGILAND</span>

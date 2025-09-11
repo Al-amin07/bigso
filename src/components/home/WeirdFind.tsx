@@ -103,8 +103,8 @@ const products = [
 
 export default function WeirdFinds() {
   return (
-    <div className=" relative ">
-      <div className="max-w-7xl relative z-20 mx-auto">
+    <div className=" relative  ">
+      <div className="max-w-7xl  relative z-20 mx-auto">
         {/* Header */}
         <TextHeader
           title="🎪 Today's Weird Finds"
@@ -123,7 +123,7 @@ export default function WeirdFinds() {
           </button>{" "}
         </div>
       </div>
-      <div className="absolute inset-0 w-full h-full  backdrop-blur-sm"></div>
+      {/* <div className="absolute inset-0 w-full h-full  backdrop-blur-sm"></div> */}
     </div>
   );
 }

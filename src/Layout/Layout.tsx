@@ -5,7 +5,7 @@ import Footer from "@/components/shared/Footer";
 
 const Layout: React.FC = () => {
   return (
-    <div className="backdrop-blur-2xl">
+    <div className="bg-transparent backdrop-blur-2xl">
       <Navbar />
       <main className="mb-[100px] ">
         <Outlet />

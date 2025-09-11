@@ -2,6 +2,7 @@ import ImageBackground from "@/components/shared/ImageBackground";
 import aboutImage from "@/assets/about.jpg";
 import OutStory from "./OurStory";
 import TaleofBagiland from "./TaleofBagiland";
+import WrapperBackground from "@/components/WrapperBackground";
 
 const About = () => {
   return (
@@ -19,8 +20,12 @@ const About = () => {
         </div>
       </ImageBackground>
       <div className="space-y-[100px] px-5">
-        <OutStory />
-        <TaleofBagiland />
+        <WrapperBackground>
+          <OutStory />
+        </WrapperBackground>
+        <WrapperBackground>
+          <TaleofBagiland />
+        </WrapperBackground>
       </div>
       {/* <AboutDetails /> */}
     </div>
